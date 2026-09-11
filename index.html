@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maren Voss — Design & Development</title>
+<meta name="description" content="Portfolio of Maren Voss, a designer and front-end developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;1,9..144,340&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise-veil" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="#top" class="wordmark">Maren Voss</a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="hero-kicker">Design &amp; front-end development</p>
+    <h1 class="hero-title">
+      I build interfaces that hold up<br>
+      under real use.
+    </h1>
+    <p class="hero-sub">
+      Maren Voss — based in Portland, working with product teams to turn
+      rough ideas into software people actually enjoy opening.
+    </p>
+  </section>
+
+  <section id="work" class="work">
+    <h2 class="section-title">Selected work</h2>
+
+    <ul class="work-list">
+      <li class="work-item">
+        <a href="#" class="work-link">
+          <div class="work-heading">
+            <h3>Harbor — booking platform redesign</h3>
+            <span class="work-year">2025</span>
+          </div>
+          <p class="work-desc">
+            Rebuilt the reservation flow for a mid-size hospitality group,
+            cutting checkout steps from seven to three and raising
+            completed bookings by 22%.
+          </p>
+          <p class="work-tags">Product design, design system, React</p>
+        </a>
+      </li>
+
+      <li class="work-item">
+        <a href="#" class="work-link">
+          <div class="work-heading">
+            <h3>Fieldnote — journaling app for researchers</h3>
+            <span class="work-year">2024</span>
+          </div>
+          <p class="work-desc">
+            An independent app for capturing observations offline.
+            Designed and built solo, from interviews through launch on
+            the App Store.
+          </p>
+          <p class="work-tags">Product design, iOS, Swift</p>
+        </a>
+      </li>
+
+      <li class="work-item">
+        <a href="#" class="work-link">
+          <div class="work-heading">
+            <h3>Loom Studio — brand &amp; site</h3>
+            <span class="work-year">2023</span>
+          </div>
+          <p class="work-desc">
+            Identity and website for a weaving studio, built around a
+            type system drawn from loom-card notation.
+          </p>
+          <p class="work-tags">Identity, web design, HTML/CSS</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <div class="about-portrait" role="img" aria-label="Portrait placeholder"></div>
+      <div class="about-text">
+        <p>
+          I'm a designer who writes production code, which mostly means I
+          don't hand off work I haven't tested myself. Ten years in,
+          split between in-house product teams and independent projects
+          for small studios.
+        </p>
+        <p>
+          Recent focus has been on booking and scheduling tools —
+          the unglamorous flows that decide whether someone finishes
+          a task or gives up halfway through.
+        </p>
+        <p>
+          Outside of client work, I teach a weekend typography class
+          and keep a small notebook of interface details worth stealing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get in touch</h2>
+    <p class="contact-lead">
+      Open to new projects starting this winter. The fastest way to
+      reach me is email.
+    </p>
+    <a href="mailto:hello@marenvoss.com" class="contact-email">hello@marenvoss.com</a>
+    <div class="contact-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Instagram</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Maren Voss</p>
+  <a href="#top" class="back-to-top">Back to top</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
